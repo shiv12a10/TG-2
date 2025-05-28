@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Verification Complete - Latest News</title>
+    <title>Verification Complete - Tech Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
@@ -84,24 +84,24 @@
         flex-direction: column;
         gap: 20px;
       }
-      .news-section {
+      .blog-section {
         flex: 1;
         margin-top: 0;
         margin-bottom: 0;
         padding: 0 12px;
       }
-      .news-title {
+      .blog-title {
         font-size: 28px;
         color: #2b3a67;
         margin: 18px 0 18px 0;
       }
-      .news-list {
+      .blog-list {
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
         justify-content: space-between;
       }
-      .news-card {
+      .blog-card {
         background: #f1f5fb;
         border-radius: 8px;
         box-shadow: 0 1px 8px #e0e0e0;
@@ -114,23 +114,23 @@
         margin-bottom: 8px;
         transition: box-shadow 0.2s;
       }
-      .news-card:hover {
+      .blog-card:hover {
         box-shadow: 0 4px 16px #cfd8dc;
       }
-      .news-img {
+      .blog-img {
         width: 100%;
         height: 160px;
         object-fit: cover;
         background: #e2e2e2;
       }
-      .news-content {
+      .blog-content {
         padding: 14px 15px 10px 15px;
         flex: 1;
         display: flex;
         flex-direction: column;
         min-width: 0;
       }
-      .news-headline {
+      .blog-headline {
         font-size: 19px;
         font-weight: bold;
         color: #172b4d;
@@ -140,7 +140,12 @@
         display: block;
         word-break: break-word;
       }
-      .news-source {
+      .blog-desc {
+        font-size: 15px;
+        color: #333;
+        margin-bottom: 5px;
+      }
+      .blog-author {
         font-size: 13px;
         color: #6b7c93;
         margin-top: auto;
@@ -190,11 +195,11 @@
         }
       }
       @media (max-width: 900px) {
-        .news-list {
+        .blog-list {
           flex-direction: column;
           align-items: center;
         }
-        .news-card {
+        .blog-card {
           width: 98vw;
           max-width: 98vw;
           min-width: 0;
@@ -207,7 +212,7 @@
         .container {
           padding: 4px;
         }
-        .news-card {
+        .blog-card {
           width: 98vw;
           max-width: 98vw;
           min-width: 0;
@@ -236,9 +241,74 @@
           <div class="ad-vertical">Left Vertical Ad</div>
           <div class="ad-vertical">Left Vertical Ad</div>
         </div>
-        <div class="news-section">
-          <div class="news-title">Latest News</div>
-          <div id="newsList" class="news-list"></div>
+        <div class="blog-section">
+          <div class="blog-title">Latest Tech Blog Posts</div>
+          <div class="blog-list">
+            <div class="blog-card">
+              <img class="blog-img" src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=400&q=80" alt="Blockchain">
+              <div class="blog-content">
+                <a href="#" class="blog-headline">Understanding Blockchain Technology</a>
+                <div class="blog-desc">Go beyond the hype and learn how blockchain is set to transform industries from finance to healthcare.</div>
+                <div class="blog-author">By Crypto Analyst</div>
+              </div>
+            </div>
+            <div class="blog-card">
+              <img class="blog-img" src="https://images.unsplash.com/photo-1465101178521-c1a9136a03b8?auto=format&fit=crop&w=400&q=80" alt="Green Tech">
+              <div class="blog-content">
+                <a href="#" class="blog-headline">Green Tech: Innovations for a Sustainable Future</a>
+                <div class="blog-desc">Explore the latest breakthroughs in clean energy, sustainable gadgets, and eco-friendly tech trends.</div>
+                <div class="blog-author">By EcoTech Writer</div>
+              </div>
+            </div>
+            <div class="blog-card">
+              <img class="blog-img" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=400&q=80" alt="Startup Guide">
+              <div class="blog-content">
+                <a href="#" class="blog-headline">Startup Guide: Turning Your Idea Into Reality</a>
+                <div class="blog-desc">From brainstorming to funding, get practical tips for launching your own tech startup in 2025.</div>
+                <div class="blog-author">By Startup Mentor</div>
+              </div>
+            </div>
+            <div class="blog-card">
+              <img class="blog-img" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=400&q=80" alt="Data Privacy">
+              <div class="blog-content">
+                <a href="#" class="blog-headline">Data Privacy Laws: What You Need to Know</a>
+                <div class="blog-desc">An overview of global data privacy regulations and what they mean for individuals and businesses.</div>
+                <div class="blog-author">By Privacy Advocate</div>
+              </div>
+            </div>
+            <div class="blog-card">
+              <img class="blog-img" src="https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?auto=format&fit=crop&w=400&q=80" alt="IoT">
+              <div class="blog-content">
+                <a href="#" class="blog-headline">The Future of IoT: Smart Everything</a>
+                <div class="blog-desc">How the Internet of Things is connecting our world and what’s next for smart devices.</div>
+                <div class="blog-author">By IoT Insider</div>
+              </div>
+            </div>
+            <div class="blog-card">
+              <img class="blog-img" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Edge Computing">
+              <div class="blog-content">
+                <a href="#" class="blog-headline">Edge Computing: The Next Big Thing?</a>
+                <div class="blog-desc">Why edge computing matters for latency, privacy, and the future of real-time apps.</div>
+                <div class="blog-author">By Edge Expert</div>
+              </div>
+            </div>
+            <div class="blog-card">
+              <img class="blog-img" src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Open Source">
+              <div class="blog-content">
+                <a href="#" class="blog-headline">Open Source: Changing the Software World</a>
+                <div class="blog-desc">Explore the power of open source, from Linux to the latest developer tools and frameworks.</div>
+                <div class="blog-author">By OSS Fan</div>
+              </div>
+            </div>
+            <div class="blog-card">
+              <img class="blog-img" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Women in Tech">
+              <div class="blog-content">
+                <a href="#" class="blog-headline">Women in Tech: Stories and Inspiration</a>
+                <div class="blog-desc">Celebrating women who are making a difference in technology and inspiring the next generation.</div>
+                <div class="blog-author">By Tech Inclusion</div>
+              </div>
+            </div>
+          </div>
           <div class="ad-block">Ad Block (Google AdSense)</div>
         </div>
         <div class="side-ads">
@@ -336,45 +406,11 @@
         document.getElementById("nextBtn").onclick = () => {
           tryRedirect();
         };
-        fetchNews();
       };
       document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("nextBox").style.display = "none";
         document.getElementById("swipeMsgTop").style.display = "none";
       });
-      async function fetchNews() {
-        try {
-          const resp = await fetch(
-            "https://tg-backend-psi.vercel.app/api/get-news"
-          );
-          const data = await resp.json();
-          // Now use data.articles as before
-          const newsList = document.getElementById("newsList");
-          newsList.innerHTML = "";
-          (data.articles || []).forEach((article) => {
-            const card = document.createElement("div");
-            card.className = "news-card";
-            card.innerHTML = `
-        <img class="news-img" src="${
-          article.urlToImage ||
-          "https://via.placeholder.com/215x112?text=No+Image"
-        }" alt="news image"/>
-        <div class="news-content">
-          <a href="${article.url}" target="_blank" class="news-headline">${
-              article.title
-            }</a>
-          <div class="news-source">${
-            article.source && article.source.name ? article.source.name : ""
-          }</div>
-        </div>
-      `;
-            newsList.appendChild(card);
-          });
-        } catch (e) {
-          document.getElementById("newsList").innerHTML =
-            "<div style='color:#a00;margin:18px auto;'>Unable to load news.</div>";
-        }
-      }
     </script>
   </body>
 </html>
